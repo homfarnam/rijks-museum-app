@@ -36,6 +36,22 @@ yarn:
 yarn start
 ```
 
+## Test
+
+To test this project run
+
+npm:
+
+```bash
+npm run test
+```
+
+yarn:
+
+```bash
+yarn test
+```
+
 ### Docker
 
 You can also run this project with docker.
