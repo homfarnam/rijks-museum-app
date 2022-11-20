@@ -13,23 +13,7 @@ interface ArtPieceProps {
 }
 
 const ArtPiece = ({ data }: ArtPieceProps) => {
-  const [loading, setloading] = useState(true)
   const imageRef = useRef<HTMLElement>(null)
-  const [hiddenTexts, setHiddenTexts] = useState({
-    title: '',
-    show: false,
-  })
-
-  useLayoutEffect(() => {
-    if (imageRef.current && imageRef.current?.clientHeight) {
-      const height = imageRef.current?.clientHeight
-
-      setHiddenTexts({
-        title: data.title,
-        show: height < 180,
-      })
-    }
-  }, [imageRef, data])
 
   return (
     <article className="gallery__paint" ref={imageRef}>
