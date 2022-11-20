@@ -62,7 +62,7 @@ const Paints = memo(({ painter, amount }: PaintsProps) => {
           Next Page
         </button>
       </div>
-      <div className="gallery">
+      <div className="gallery" data-testid="gallery">
         {isLoading ? (
           <div className="flex flex-wrap items-center justify-around w-full h-full gap-5">
             loading
