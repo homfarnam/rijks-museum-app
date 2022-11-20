@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Layout, Paints } from './components'
 import useFetchData from './hooks/useFetchData'
-import type { MakerArtsTypes } from './types/maker'
+import { MakerArtsTypes } from './types/maker'
 
 const App = () => {
   const [selectedPainter, setSelectedPainter] = useState<string>('')
@@ -39,7 +39,11 @@ const App = () => {
       <div className="museum">
         <section className="museum__searchContainer">
           <label htmlFor="painterSearch">Select a Painter </label>
-          <select onChange={handleSelect} value={selectedPainter}>
+          <select
+            data-testid="painterSearch"
+            onChange={handleSelect}
+            value={selectedPainter}
+          >
             {painters?.map((painter) => (
               <option key={painter.key} value={painter.key}>
                 {painter.key}
