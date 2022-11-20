@@ -9,7 +9,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 import 'react-toastify/dist/ReactToastify.css'
 
 const queryClient = new QueryClient({
-  defaultOptions: { queries: { staleTime: 3000 } },
+  defaultOptions: { queries: { staleTime: 3000, refetchOnWindowFocus: false } },
 })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
