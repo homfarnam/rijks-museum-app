@@ -1,0 +1,46 @@
+.card {
+  height: 400px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.thumbnail {
+  @apply mx-auto;
+  position: relative;
+  height: 100%;
+  width: 90%;
+}
+
+.card * {
+  background: -o-linear-gradient(
+    330deg,
+    #e5e5e5 30%,
+    #f2f2f2 38%,
+    #f2f2f2 40%,
+    #e5e5e5 48%
+  );
+  background: linear-gradient(
+    120deg,
+    #e5e5e5 30%,
+    #f2f2f2 38%,
+    #f2f2f2 40%,
+    #e5e5e5 48%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-animation: load 2s infinite;
+  animation: load 2s infinite;
+}
+@-webkit-keyframes load {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@keyframes load {
+  100% {
+    background-position: -100% 0;
+  }
+}

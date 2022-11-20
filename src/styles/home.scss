@@ -1,0 +1,105 @@
+:root {
+  body {
+    overflow-x: hidden;
+  }
+}
+.museum {
+  @apply w-full h-screen;
+
+  &__searchContainer {
+    @apply px-10 py-5 flex flex-col items-center justify-start bg-slate-200;
+
+    &--amount {
+      @apply flex items-center mx-5 mt-3 space-x-3;
+
+      @screen md {
+        @apply mt-0;
+      }
+    }
+
+    select {
+      @apply px-2 py-2 mx-2 rounded-lg w-3/4 outline-none;
+
+      @screen md {
+        @apply w-auto;
+      }
+    }
+
+    @screen md {
+      @apply flex-row justify-start;
+    }
+  }
+
+  &__paintsContainer {
+    @apply w-full min-h-full from-amber-700 to-black bg-gradient-to-t;
+  }
+}
+.navButtons {
+  @apply flex items-center justify-around w-full py-5 text-xl text-white;
+
+  &--prev {
+    @apply bg-red-400 px-2 py-2 rounded-xl;
+
+    &:hover {
+      @apply bg-red-500;
+    }
+  }
+  &--next {
+    @apply bg-green-600 px-2 py-2 rounded-xl;
+    &:hover {
+      @apply bg-green-700;
+    }
+  }
+}
+
+.gallery {
+  @apply z-40 px-5 py-10 w-full;
+  @apply gap-x-5 gap-y-5 columns-1 mx-auto max-w-7xl;
+
+  @screen md {
+    @apply columns-2;
+  }
+
+  @screen lg {
+    @apply columns-3;
+  }
+
+  &__paint {
+    @apply z-30 mb-5 relative before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20;
+
+    &--cover {
+      @apply absolute z-10 w-full h-full bg-black opacity-20;
+    }
+    img {
+      @apply rounded-md h-full;
+    }
+
+    &__details {
+      @apply absolute inset-0 flex flex-col p-8 text-white z-20;
+
+      &__top {
+        @apply relative hidden;
+
+        @screen md {
+          @apply block;
+        }
+
+        span {
+          @apply mb-3 text-xl font-bold text-white hidden;
+
+          @screen md {
+            @apply block;
+          }
+        }
+
+        p {
+          @apply font-light hidden;
+
+          @screen md {
+            @apply block;
+          }
+        }
+      }
+    }
+  }
+}
