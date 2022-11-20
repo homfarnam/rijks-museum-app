@@ -1,7 +1,7 @@
 import { AxiosError } from 'axios'
 import { museumAPI } from '../api/api'
 import { useQuery } from '@tanstack/react-query'
-import toast from 'react-hot-toast'
+import { toast } from 'react-toastify'
 
 const useFetchData = <T,>(url: string) => {
   const fetchData = async (url: string) => {
@@ -16,6 +16,7 @@ const useFetchData = <T,>(url: string) => {
     () => fetchData(url),
     {
       staleTime: 3000,
+      retry: 3,
       onError: (error: AxiosError) =>
         toast.error(`Something went wrong: ${error.message}`),
     }
