@@ -33,6 +33,18 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.tsx"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios)/"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -49,9 +61,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
     "@types/react-lazy-load-image-component": "^1.5.2",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
+    "babel-jest": "^29.3.1",
     "eslint": "^8.27.0",
     "eslint-plugin-react-hooks": "^5.0.0-next-56ffca8b9-20221117"
   }
