@@ -11,7 +11,7 @@ const useFetchData = <T,>(url: string) => {
     return paintings
   }
 
-  const { isLoading, data } = useQuery(
+  const { isLoading, data, isSuccess } = useQuery(
     ['paintings', url],
     () => fetchData(url),
     {
@@ -25,6 +25,7 @@ const useFetchData = <T,>(url: string) => {
   return {
     data,
     isLoading,
+    isSuccess,
   }
 }
 
