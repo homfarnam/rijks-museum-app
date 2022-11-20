@@ -1,6 +1,7 @@
 # Rijks museum app
 
 It's a project to show the art of the Rijks museum in a nice way.
+
 See demo here [https://rijks-museum-app.vercel.app/).
 
 ## Installation
@@ -33,6 +34,35 @@ yarn:
 
 ```bash
 yarn start
+```
+
+### Docker
+
+You can also run this project with docker.
+
+First you need to build the Docker image for the current folder.
+
+```bash
+
+docker build . -t dockerized-react
+
+
+```
+
+You can check the image was created.
+
+```bash
+
+docker images | grep dockerized-react
+
+```
+
+You can run the image in detached mode and map port 3000 (or any other free port that you want) inside the container with 3000 on current host.
+
+```bash
+
+docker run -p 3000:3000 -d dockerized-react
+
 ```
 
 ## Pages
