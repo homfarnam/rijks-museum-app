@@ -77,6 +77,15 @@ In the `ArtPiece` component, the data is showed and it shows title and painter a
 - ✅ Styling: **SCSS**
 - ✅ Code Quality: **ESLint, Prettier**
 
+### Usage of some packages
+
+- **[React Query](https://react-query.tanstack.com/)**: For fetching data from API and caching it.
+- **[Axios](https://axios-http.com/)**: For fetching data from API.
+- **[Tailwind CSS](https://tailwindcss.com/)**: For styling the app.
+- **[react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)**: For lazy loading images.
+- **[react-toastify](https://www.npmjs.com/package/react-toastify)**: For showing toast messages.
+- **[sass](https://www.npmjs.com/package/sass)**: For compiling scss files to css files.
+
 ## 🪝 Hooks
 
 #### General
