@@ -70,12 +70,12 @@ In the `ArtPiece` component, the data is showed and it shows title and painter a
 ## 🧰 Libraries and tools
 
 - ✅ Programming Language: **JavaScript, Typescript**
-- ✅ Typecheck: **Typescript**
-- ✅ Dom Manipulation: **React**
-- ✅ Network Layer: **[React Query](https://react-query.tanstack.com/), Axios**
+- ✅ Typecheck: **[Typescript](https://www.typescriptlang.org/)**
+- ✅ Dom Manipulation: **[React](https://reactjs.org/)**
+- ✅ Network Layer: **[React Query](https://react-query.tanstack.com/),[Axios](https://axios-http.com/)**
 - ✅ CSS Framework: **[Tailwind CSS](https://tailwindcss.com/)**
-- ✅ Styling: **SCSS**
-- ✅ Code Quality: **ESLint, Prettier**
+- ✅ Styling: **[SCSS](https://www.npmjs.com/package/sass)**
+- ✅ Code Quality: **[ESLint](https://eslint.org/), [Prettier](https://prettier.io/)**
 
 ### Usage of some packages
 
