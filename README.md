@@ -81,6 +81,17 @@ docker run -p 3000:3000 -d dockerized-react
 
 ```
 
+## Environment variables
+
+You can set the environment variables in the .env file.
+
+```bash
+  cp .env.example .env
+```
+
+For `REACT_APP_API_URL` you need to set the url of the api.
+And for `REACT_APP_API_TOKEN` you need to set the token of the api.
+
 ## Pages
 
 Each page wrapped in `Layout` container component.
